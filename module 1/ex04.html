@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+            font: normal 20px arial;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var name = window.prompt('what is your name?')
+        document.write(`hey, <strong>${name}</strong>. your name has ${name.length} letters.<br/>`)
+        document.write(`your name in uppercase is ${name.toUpperCase()}<br/>`)
+        document.write(`your name in lowercase is ${name.toLowerCase()}`)
+    </script>
+</body>
+</html>
