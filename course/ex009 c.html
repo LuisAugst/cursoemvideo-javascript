@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Country</h1>
+    Country: <input type="text" name="txtcnt" id="txtcnt">
+    <input type="button" value="check" onclick="checker()">
+    <div id="res"></div>
+    
+    <script>
+        function checker() {
+        var txtcnt = document.getElementById('txtcnt')
+        var res = document.querySelector('div#res')
+        var country = "Brazil"
+        if (txtcnt.value == "Brazil") {
+            res.innerHTML = `<p> You are brazilian!</p>`
+        } else{
+            res.innerHTML = `<p> You are a Foreigner!</p>`
+        }
+        
+    }
+    </script>
+</body>
+</html>

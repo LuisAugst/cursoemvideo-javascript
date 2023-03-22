@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fine System</h1>
+    Car speed: <input type="number" name="txtspd" id="txtspd">
+    <input type="button" value="check" onclick="adding()">
+    <div id="res"></div>
+    
+    <script>
+        function adding() {
+        var txtspd = document.querySelector('input#txtspd')
+        var res = document.querySelector('div#res')
+        var spd = Number(txtspd.value)
+        res.innerHTML = `<p>your current speed is ${spd}KM/h</p>`
+        if (spd > 60) {
+            res.innerHTML += `<p> You surpassed the speed limit!</p>`
+        }
+        res.innerHTML += `<p>Always drive using the seat belt!~</p>`
+    }
+    </script>
+</body>
+</html>
