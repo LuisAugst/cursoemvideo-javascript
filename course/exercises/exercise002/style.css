@@ -15,20 +15,23 @@ section{
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.33);
-}
-
-div{
-    text-align: center;
-    padding: 5px;
-}
-
-a{
-    color: white;
-    text-decoration: none;
+    align-self: center;
 }
 
 footer{
 color: white;
 text-align: center;
 font-style: italic;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin-left: -190px;
+    padding-bottom: 50px;
 }
